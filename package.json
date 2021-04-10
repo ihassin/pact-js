@@ -1,0 +1,43 @@
+{
+  "name": "tau-pact-nodejs-course",
+  "version": "1.0.0",
+  "description": "A simple Nodejs + jest project configuring contract tests with PactJS",
+  "main": "src/index.js",
+  "scripts": {
+    "consumer": "node src/consumerService.js",
+    "provider": "node src/providerService.js",
+    "test:consumer": "jest __tests__/contract/consumer --runInBand --setupFiles ./__tests__/contract/helpers/pactSetup.js --setupTestFrameworkScriptFile=./__tests__/contract/helpers/pactTestWrapper.js",
+    "test:provider": "jest __tests__/contract/provider --runInBand --force-exit"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/rafaelaazevedo/tau-pact-nodejs-course.git"
+  },
+  "keywords": [
+    "nodejs",
+    "contract-tests",
+    "pactjs",
+    "pact",
+    "tutorial",
+    "course",
+    "tau"
+  ],
+  "author": "Rafaela Azevedo",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/rafaelaazevedo/tau-pact-nodejs-course/issues"
+  },
+  "homepage": "https://github.com/rafaelaazevedo/tau-pact-nodejs-course#readme",
+  "devDependencies": {
+    "@pact-foundation/pact": "^9.15.4",
+    "axios": "^0.21.1",
+    "body-parser": "^1.19.0",
+    "cors": "^2.8.5",
+    "eslint": "^6.8.0",
+    "express": "^4.17.1",
+    "jest": "^25.1.0"
+  },
+  "jest": {
+    "testEnvironment": "node"
+  }
+}
