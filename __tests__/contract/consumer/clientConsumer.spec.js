@@ -30,7 +30,7 @@ describe("Client Service", () => {
     describe("GET Clients", () => {
         beforeEach(() => {
             const interaction = {
-                state: "I have a list of contacts",
+                state: "I have a list of clients",
                 uponReceiving: "a request to get all clients",
                 withRequest: {
                     method: "GET",
@@ -55,5 +55,6 @@ describe("Client Service", () => {
             expect(response.data).toEqual(GET_EXPECTED_BODY)
             expect(response.status).toEqual(200)
         })
+
     })
 })

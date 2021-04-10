@@ -9,6 +9,6 @@ global.provider = new Pact({
     spec: 2,
     logLevel: 'INFO',
     pactfileWriteMode: "overwrite",
-    consumer: "FrontEnd",
+    consumer: "Client",
     provider: "Service"
 })

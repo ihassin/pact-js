@@ -8,7 +8,7 @@
   "interactions": [
     {
       "description": "a request to get all clients",
-      "providerState": "I have a list of contacts",
+      "providerState": "I have a list of clients",
       "request": {
         "method": "GET",
         "path": "/clients",
