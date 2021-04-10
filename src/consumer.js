@@ -39,7 +39,6 @@ const postClient = async (body) => {
     return res
 }
 
-
 module.exports = {
   server,
   getClients,
