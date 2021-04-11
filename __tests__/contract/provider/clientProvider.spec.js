@@ -10,12 +10,12 @@ server.listen(8081, ()=> {
 })
 
 describe("Service verification", () => {
-    it("validates the expectation of the client", () => {
+    it("Validates the expectation of the client", () => {
         let opts = {
-            provider: "Client service",
+            provider: "Service",
             logLevel: "DEBUG",
             providerBaseUrl: SERVER_URL,
-            pactUrls: [path.resolve(process.cwd(), "./__tests__/contract/pacts/frontend-service.json")],
+            pactUrls: [path.resolve(process.cwd(), "./__tests__/contract/pacts/client-service.json")],
             consumerVersionTags: ["dev"],
             providerVersionTags: ["dev"],
             publishVerificationResult: false,

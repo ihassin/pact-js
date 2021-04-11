@@ -1,9 +1,8 @@
 "use strict"
 
-const { Matchers } = require("@pact-foundation/pact")
-const { getClients, postClient } = require("../../../src/consumer")
+const { getClients } = require("../../../src/consumer")
 
-describe("Client Service", () => {
+describe("Consumer tests", () => {
    const GET_EXPECTED_BODY = [
        {
            "firstName": "Lisa",

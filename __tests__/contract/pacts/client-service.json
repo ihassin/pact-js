@@ -1,6 +1,6 @@
 {
   "consumer": {
-    "name": "FrontEnd"
+    "name": "Client"
   },
   "provider": {
     "name": "Service"
