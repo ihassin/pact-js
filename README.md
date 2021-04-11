@@ -1,6 +1,6 @@
 # PactJS project
 
-Inspired by [this](https://testautomationu.applitools.com/pact-contract-tests/)
+Inspired by [Rafaela's tutorial](https://testautomationu.applitools.com/pact-contract-tests/)
 
 ## Running via CLI
 
@@ -23,4 +23,3 @@ Inspired by [this](https://testautomationu.applitools.com/pact-contract-tests/)
 
 - Publish the contracts:
 `npm run publish:contract`
-  
