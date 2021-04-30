@@ -7,20 +7,17 @@ describe("Consumer tests", () => {
        {
            "firstName": "Lisa",
            "lastName": "Simpson",
-           "age": 8,
-           "id": 1
+           "age": 8
        },
        {
            "firstName": "Wonder",
            "lastName": "Woman",
-           "age": 30,
-           "id": 2
+           "age": 30
        },
        {
            "firstName": "Homer",
            "lastName": "Simpson",
-           "age": 39,
-           "id": 3
+           "age": 39
        }
    ]
 

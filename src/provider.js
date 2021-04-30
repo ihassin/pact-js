@@ -22,7 +22,7 @@ const clientRepository = new Repository()
 const importData = () => {
   const data = require("./data/clientData.json")
   data.reduce((a, v) => {
-    v.id = a + 1
+    // v.id = a + 1
     clientRepository.add(v)
     return a + 1
   }, 0)
@@ -30,6 +30,7 @@ const importData = () => {
 
 // Get all clients
 server.get("/clients", (req, res) => {
+  console.log("Hello from /getclients");
   res.json(clientRepository.fetchAll())
 })
 
